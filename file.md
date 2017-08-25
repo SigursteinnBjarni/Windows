@@ -1,31 +1,24 @@
-## Synopsis
+# The idea.
+Since i’ve started learning on Linux academy there has been something missing. Real scenario troubleshooting. This is mainly focused on RHCSA and RHCE courses.
 
-At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
+The idea that in every week or so Linux Academy uploads a virtual machine (or machines, maybe server and a client)  that is not working properly. This could of course be a lab server hosted by Linux Academy as well.
 
-## Code Example
+The goal for the student is to resolve the issues that affect the server.
 
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
+## Some examples might be:
 
-## Motivation
+* There is a problem with Apache web server, the server was rebooted because it had been running for over a year without a reboot. It seems after the reboot the server is unable to serve content. What happened when the server was rebooted? And how can you fix it?
 
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
+	* Possible solutions
+	SELinux might be enabled after the reboot, the apache server is unable to execute into the filesystem or read the files, might be a ACL problem. A faulty rewrite rule is 		redirecting all calls to some location. 
 
-## Installation
+* There is a database running a server, there is a firewall running on the server as well. The client machine has lost all connection to the database server. There is also a problem with the database backup, it has not been backed up for several days.
 
-Provide code examples and explanations of how to get the project.
+	* Possible solutions.
+	The firewall rule is no longer in effect on the server or has been changed so that it denies all connections to port 3306. 
 
-## API Reference
+	How is the database backed up? Is it a cron job? If so, where is it stored and can you find the log to see what the problem is. This issue might be caused by insufficient space 		on the filesystem and we need to expand the LVM. There might be a wrong password for the database in the cron script. How can we safely use the password in a cron script to 		backup the database.
 
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
+The reason behind this is to use the skills we have learned here at Linux Academy to tackle real life scenarios and to help us become better at our jobs or to prepare ourselves for the exams.
 
-## Tests
-
-Describe and show how to run the tests with code examples.
-
-## Contributors
-
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
-
-## License
-
-A short snippet describing the license (MIT, Apache, etc.)
+There are many more possibilities, DNS problems, NTP problems, maybe some JAVA application is always running out of memory, how can we fix that. User problems and so on.
