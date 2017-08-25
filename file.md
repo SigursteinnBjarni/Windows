@@ -15,9 +15,9 @@ The goal for the student is to resolve the issues that affect the server.
 * There is a database running a server, there is a firewall running on the server as well. The client machine has lost all connection to the database server. There is also a problem with the database backup, it has not been backed up for several days.
 
 	* Possible solutions.
-	The firewall rule is no longer in effect on the server or has been changed so that it denies all connections to port 3306. 
+	* The firewall rule is no longer in effect on the server or has been changed so that it denies all connections to port 3306. 
 
-	How is the database backed up? Is it a cron job? If so, where is it stored and can you find the log to see what the problem is. This issue might be caused by insufficient space 		on the filesystem and we need to expand the LVM. There might be a wrong password for the database in the cron script. How can we safely use the password in a cron script to 		backup the database.
+	* How is the database backed up? Is it a cron job? If so, where is it stored and can you find the log to see what the problem is. This issue might be caused by insufficient space 		on the filesystem and we need to expand the LVM. There might be a wrong password for the database in the cron script. How can we safely use the password in a cron script to 		backup the database.
 
 The reason behind this is to use the skills we have learned here at Linux Academy to tackle real life scenarios and to help us become better at our jobs or to prepare ourselves for the exams.
 
