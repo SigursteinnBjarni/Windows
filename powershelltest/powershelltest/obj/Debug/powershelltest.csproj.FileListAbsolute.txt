@@ -1,5 +1,0 @@
-\\innra.umsja.is\nyh$\private\isrek\home\s\sigursteinnh\my documents\visual studio 2013\Projects\powershelltest\powershelltest\bin\Debug\powershelltest.dll
-\\innra.umsja.is\nyh$\private\isrek\home\s\sigursteinnh\my documents\visual studio 2013\Projects\powershelltest\powershelltest\bin\Debug\powershelltest.pdb
-\\innra.umsja.is\nyh$\private\isrek\home\s\sigursteinnh\my documents\visual studio 2013\Projects\powershelltest\powershelltest\obj\Debug\powershelltest.dll
-\\innra.umsja.is\nyh$\private\isrek\home\s\sigursteinnh\my documents\visual studio 2013\Projects\powershelltest\powershelltest\obj\Debug\powershelltest.pdb
-\\innra.umsja.is\nyh$\private\isrek\home\s\sigursteinnh\my documents\visual studio 2013\Projects\powershelltest\powershelltest\obj\Debug\powershelltest.csprojResolveAssemblyReference.cache
