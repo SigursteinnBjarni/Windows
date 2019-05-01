@@ -1,8 +1,8 @@
 $returnStateOK = 0
 $returnStateWarning = 1
 $returnStateCritical = 2
-
-$items = (Get-ChildItem E:\SITAmsg\IN | measure).Count
+$path=""
+$items = (Get-ChildItem $path | measure).Count
 
 if ($items -le 100){
     write-host "OK - $items in queue"
